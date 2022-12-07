@@ -1,0 +1,9 @@
+class person():
+    def __int__(self):
+        self.name = ''
+        self.age = 0
+        self.hair_color = 'BROWN'
+class student(person):
+    def __int__(self):
+        super().__int__()
+        self.id = 0
