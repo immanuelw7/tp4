@@ -1,0 +1,11 @@
+class Rectangle:
+    def __int__(self, la_longuer, la_largeur):
+        self.longeur = la_longeur
+        self.largeur = la_largeur
+    def calculer_aire(self):
+        return self.longuer*self.largeur
+    def show(self):
+        print('La longeur:', self.longueur,'La largeur:',self.largeur,'aire', calculer_aire())
+
+
+
