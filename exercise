@@ -1,0 +1,54 @@
+import random
+from math import pi
+# exercise 1 stringFoo
+class StringFoo:
+    def __init__(self):
+        self.set_string = 'a'
+
+    def set_string(self, string):
+        self.set_string = string
+
+    def print_string(self):
+        print(self.set_string.upper)
+# exercise 2
+class Rectangle:
+    def __init__(self, largeur, longueur):
+        self.largeur = largeur
+        self.longueur = longueur
+
+    def calcul_aire(self):
+        return self.largeur * self.longueur
+
+    def afficher_infos(self):
+        print(f"Largeur: {self.largeur}, Longueur: {self.longueur}, Aire: {self.calcul_aire()}")
+
+#exercise 3
+class Cercle:
+    def __init__(self, rayon):
+        self.rayon = rayon
+
+    def calcul_aire(self):
+        return pi * self.rayon ** 2
+
+    def calcul_circonference(self):
+        return 2 * pi * self.rayon
+# exercise 4
+class Hero:
+    def __init__(self, nom):
+        self.hp = random.randint(1, 10) + random.randint(1, 10)
+        self.attaquer = random.randint(1, 6)
+        self.defense = random.randint(1, 6)
+        self.nom = nom
+
+    def faire_attaque(self):
+        return random.randint(1, 6) + self.attaquer
+    def recevoir_attaque(self):
+        self.hp -= random.randint(1, 6)
+    def est_vivant(self):
+        if self.hp > 0:
+            return True
+        return False
+
+
+
+
