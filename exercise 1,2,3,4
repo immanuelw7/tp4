@@ -4,13 +4,17 @@
 import random
 from math import pi
 # exercise 1 stringFoo
+# créer une classe qui s'apelle StringFoo
 class StringFoo:
+#créer une fonction
     def __init__(self):
+    #methode 
         self.set_string = 'a'
-
+        
+#creer une fonction qu'on va instaurer string
     def set_string(self, string):
         self.set_string = string
-
+#creer une fonction où il aura une methode
     def print_string(self):
         print(self.set_string.upper)
 # exercise 2
