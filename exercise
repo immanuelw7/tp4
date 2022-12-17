@@ -1,3 +1,6 @@
+#Fait par Enoch Immanuel Wang le 16 dec 2022
+#code de pratique pour comprendre les classes
+#on import les modules
 import random
 from math import pi
 # exercise 1 stringFoo
